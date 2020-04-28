@@ -3,7 +3,6 @@ var router = express.Router();
 
 const soups = ['gazpacho', 'borscht', 'primordial', 'avgolemono', 'laksa'];
 
-
 router.post('/', function(req, res, next) {
     let soup = req.query.name;
     soups.push(soup);
